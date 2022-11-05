@@ -225,7 +225,7 @@ void main(List<String> arguments) {
 
   StudentAndRating studentAndRating = StudentAndRating.ar(map);
   Rating rating = Rating.ratings(map);
-
+  // or
   // map.forEach((key, value) {
   //   print('{ key: $key, value: $value}');
   // });
@@ -238,6 +238,7 @@ void main(List<String> arguments) {
     print('description : ${studentAndRating.student[i].description}');
     print('category : ${studentAndRating.student[i].category}');
     print('image : ${studentAndRating.student[i].image}');
+    // print(studentAndRating.rating?.count);
     print(rating.toMap());
   }
 }

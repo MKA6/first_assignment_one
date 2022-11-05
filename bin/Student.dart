@@ -11,7 +11,7 @@ class Student {
   String? category;
   String? image;
 
-  Student.stud(Map<String, dynamic> map) {
+  Student.stud(Map map) {
     id = map['id'];
     title = map['title'];
     price = map['price'];

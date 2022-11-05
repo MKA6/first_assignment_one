@@ -9,12 +9,14 @@ class Rating {
     };
   }
 
+  Rating(this.rate, this.count);
+
   // Map<String, dynamic> toMap1() => {
   //       'rate': rate,
   //       'count': count,
   //     };
 
-  Rating.ratings(Map<String, dynamic> map) {
+  Rating.ratings(Map map) {
     rate = map['rate'];
     count = map['count'];
   }
